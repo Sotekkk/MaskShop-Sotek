@@ -37,12 +37,8 @@ maskshop = {
 				FreezeEntityPosition(GetPlayerPed(-1), false)
                 TriggerServerEvent('Sotek:pay')
 				SAveSkinSOSomaness()
-                TriggerServerEvent('Sotek:saveMask',skin)
 				ESX.ShowNotification("~g~Vespucci Masks\n~s~Vous venez d'acheter un masque pour ~g~15$") 
 				CloseMenu(true) 
-				ESX.TriggerServerCallback('esx_skin:getPlayerSkin', function(skin)
-                    TriggerEvent('skinchanger:loadSkin', skin)
-				end)
             end
         end,
 
